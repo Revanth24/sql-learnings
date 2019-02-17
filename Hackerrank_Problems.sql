@@ -136,7 +136,15 @@ select round(
             (min(long_w) - max(long_w)), 2)), 4)  from station;                                      
                                        
                                        
-                                       
-                                       
+
+/* Query the smallest Northern Latitude (LAT_N) from STATION that is greater than 38.7780. Round your answer to 4 decimal places. */
+
+select round(min(lat_n), 4) from station where lat_n > 38.7780;
+
+
+
+/* Query the Western Longitude (LONG_W) for the largest Northern Latitude (LAT_N) in STATION that is less than 137.2345. Round your answer to  decimal places. */
+
+select round(max(long_w), 4) from station where lat_n < 137.2345;                                       
                                        
                                        
